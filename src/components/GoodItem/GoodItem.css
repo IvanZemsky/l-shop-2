@@ -1,0 +1,54 @@
+.good-item{
+   flex: 1 0 300px;
+   border-radius: 20px;
+   overflow: hidden;
+   background-color: #ffffff;
+   box-shadow: 0px 0px 20px #e2e2e2;
+}
+
+.good-item a{
+   display: block;
+   width: 100%;
+   height: 200px;
+}
+
+.good-item img{
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.good-item_info{
+   padding: 15px;
+}
+
+.good-item_info h3{
+   margin-bottom: 10px;
+}
+
+.good-item_info p{
+   font-size: 20px;
+}
+
+.good-item_cost{
+   display: flex;
+   gap: 15px;
+}
+
+.good-item_buttons{
+   display: flex;
+   gap: 5px;
+   margin-left: auto;
+}
+
+.good-item_buttons button {
+   display: block;
+   width: 20px;
+   height: 20px;
+   border-radius: 4px;
+   box-shadow: none;
+   background-color: #d6d6d6;
+   border: none;
+   outline: 0;
+   cursor: pointer;
+}
