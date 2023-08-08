@@ -6,7 +6,7 @@
    box-shadow: 0px 0px 20px #e2e2e2;
 }
 
-.good-item a{
+.good-item .good-item_image{
    display: block;
    width: 100%;
    height: 200px;

@@ -1,0 +1,19 @@
+.navbar{
+   padding: 15px 45px;
+   background-color: #1e1e1e;
+}
+
+.navbar ul{
+   display: flex;
+   gap: 15px;
+   list-style: none;
+}
+
+.navbar a{
+   color: white;
+   text-decoration: none;
+}
+
+.navbar a:hover{
+   color: #d3d3d3;
+}
