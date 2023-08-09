@@ -13,7 +13,7 @@ export function ShopProductsContext(props) {
   }, [cartProducts]);
 
   const addToCart = (product) => {
-    if (cartProducts.find(item => item.id == product.id)) {
+    if (cartProducts.find(item => item.id === product.id)) {
       const updatedCartProducts = cartProducts.map(item =>
         item.id === product.id ? { ...item, amount: item.amount + 1 } : item
       );
@@ -22,12 +22,13 @@ export function ShopProductsContext(props) {
     else {
       setCartProducts([...cartProducts, { ...product, amount: 1 }]);
     }
-
-
   }
 
   const removeFromCart = (product) => {
-
+    const updatedCartProducts = cartProducts.map(item =>
+      item.id === product.id ? { ...item, amount: item.amount - 1 } : item
+    ).filter(item => item.amount > 0);
+    setCartProducts(updatedCartProducts);
   }
 
   const contextValue = {

@@ -16,7 +16,7 @@ function GoodItem({product}) {
          <div className="good-item_cost">
             <p>${product.cost}</p>
             <div className="good-item_buttons">
-               <button type='button'>-</button>
+               <button type='button' onClick={() => removeFromCart(product)}>-</button>
                <button type='button' onClick={() => addToCart(product)}>+</button>
             </div>
          </div>
